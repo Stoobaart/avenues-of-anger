@@ -1,0 +1,34 @@
+h1 {
+	color: blue;
+	text-align: center;
+}
+.fightBox {
+	border: 0.5px solid black;
+	width: 50rem;
+	height: 40rem;
+	margin: auto;
+}
+#player {
+	overflow: hidden;
+	width: 6.5rem;
+	height: 10rem;
+	position:relative;
+	image-rendering: pixelated;
+}
+
+img.playerSprite, img.playerSpriteRight, img.playerSpriteLeft, img.playerSpriteDown, img.playerSpriteUp {
+  width: 73rem;
+  image-rendering: pixelated;
+  filter: blur(0);
+  -webkit-filter: blur(0);
+}
+
+@keyframes walk {
+  100% {
+    transform: translateX(-73rem);
+  }
+}
+
+.walkAnim {
+  animation: walk 700ms steps(8) infinite;
+}
